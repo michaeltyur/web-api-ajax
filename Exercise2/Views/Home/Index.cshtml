@@ -1,0 +1,38 @@
+﻿
+<div class="page-header">
+    <h1>Try our recipes and if you see the next, day try again</h1>
+</div>
+<div class="buttons">
+    <input type="button" class="buttons" id="new-recipe-button" value="New Recipe" onclick="clearFields()" />
+    <h3 id="alert"></h3>
+</div>
+<hr>
+<div class="recipes-container ">
+    <div id="recipes-list"></div>
+    <div id="selected-recipe">
+        <h3 id="sel-recipe-title">New Recipe</h3>
+        <form action="JavaScript:updateSelectedRecipe()" id="updateRecipeForm">
+            <input id="recipeId" name="recipeId" type="hidden">
+            <div class="container recipe-ditails">
+                <div class="row">
+                    <div class="col-sm"><label for="recipeName">Name:&nbsp</label></div>
+                    <div class="col-sm"><input type="text" id="recipeName" class="update-input"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"><label for="recipeDescription">Description:&nbsp&nbsp</label></div>
+                    <div class="col-sm"><textarea id="recipeDescription" class="update-input"></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"><label for="ingredients">Ingredients("," separator):&nbsp</label></div>
+                    <div class="col-sm"><textarea id="ingredients" class="update-input"></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"><label for="image-src">Image:&nbsp</label></div>
+                    <div class="col-sm"><input type="text" id="image-src" class="update-input"></div>
+                    <input type="submit" id="update-button" class="buttons selected-buttons" value="New Recipe">
+            </div>
+       </div>                   
+    </form>
+    </div>
+</div>
+

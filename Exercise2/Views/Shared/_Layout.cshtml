@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="nav-bar-container container">
+        <div class="nav-bar-buttons">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Recipes", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Shopping Ingredients", "ShopList", "ShopItem", new { area = "" }, null)</li>
+                @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>*@
+            </ul>
+            <div id="login-div">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <h4>Wellcome,@User.Identity.Name</h4>
+                    <input type="button" id="logout-button" class="log-buttons" value="sign out" onclick="logout()">
+                }
+                else
+                {
+                    <label for="userName">user name:&nbsp</label>
+                    <input type="text" id="userName" class="login-input">
+                    <label for="password">password:&nbsp</label>
+                    <input type="password" id="password" class="login-input">
+                    <input type="button" id="login-button" class="log-buttons" value="sign in" onclick="loginFieldsValidation()">
+                }
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/recipeApp")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

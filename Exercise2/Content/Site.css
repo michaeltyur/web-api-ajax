@@ -1,0 +1,345 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('/Images/background.jpg');
+    background-size: cover;
+}
+hr{
+    width:100%;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*------------------------------My App Section Style------------------------------------*/
+hr {
+    border-bottom: 1px groove grey;
+}
+/*Page Titel*/
+.page-header {
+    border: 3px outset grey;
+    border-radius:10px;
+    padding-left:20px;
+}
+/*Navigation Panel*/
+.nav-bar-buttons {
+    /*width: 1000px;*/
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px groove grey;
+}
+
+/*All Buttons*/
+.buttons {
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+}
+.buttons:hover {
+    color: #fff;
+    background: #333;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    border-radius: 5px;
+}
+/*Alert*/
+#alert
+{
+    float:right;
+    color:red;
+}
+/*---------------------Login-----------------------------*/
+#login-div {
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#logout-button 
+{
+    /*margin-top: 20px;*/
+    margin-left: 10px; 
+    height:28px;
+
+}
+.login-input {
+    border-radius: 5px;
+}
+.log-buttons {
+    border-radius: 5px;
+}
+#back-home
+{
+    height:35px;
+    width:auto;
+}
+/*-----------------Recipes Container------------------*/
+.recipes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#recipes-list {
+    width: 500px;
+    border: 3px groove yellowgreen;
+    border-radius:5px;
+    padding:10px;
+}
+.recipe-img 
+{
+    max-width:150px;
+    float:right;
+    padding-left:10px;
+   
+}
+.recipes-title {
+    text-align: center;
+    border-bottom: 2px groove yellowgreen;
+    padding-bottom: 18px;
+}
+/*Recipes Div*/
+/*Recepe*/
+.recipe-out {
+    /*display: flex;
+    flex-direction: row;*/
+    /*display: inline-block;*/
+    border-top: 1px groove yellowgreen;
+    cursor: pointer;
+    padding:10px;
+    /*background-color:palevioletred;*/
+    
+}
+/*-----------------------------Update Div--------------------------------*/
+.container.recipe-ditails {
+    padding-left:30px;
+    padding-right:30px;
+}
+#selected-recipe {
+    width: 500px;
+    height: 455px;
+    border: 3px groove yellowgreen;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+#selected-recipe h3 {
+    text-align: center;
+    border-bottom: 2px groove yellowgreen;
+    padding-bottom:18px;
+}
+/*Update Input*/
+.update-input {
+  border-radius: 5px;
+  margin-right: 0;
+  font-size:20px;
+}
+#recipeName 
+{
+    width:300px;
+}
+#recipeDescription {
+    font-size: 16px;
+    height: 8vh;
+    width: 44vh;
+    resize: none;
+}
+.ingredients 
+{
+    font-style:italic;
+}
+#ingredients {
+    font-size: 15px;
+    height: 6vh;
+    width: 44vh;
+    resize: none;
+    /*pointer-events: none;*/
+}
+#image-src {
+    width: 300px;
+    font-size: 16px;
+}
+/*----------------------------Buttons-------------------------------*/
+.selected-buttons {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#update-button {
+    width: 100px;
+    float:right;
+}
+.recipe-buttons-div 
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.recipe-buttons {
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 120px;
+}
+/*------------------Ingridients Page---------------------*/
+/*Top Bar*/
+.ingredients-top-bar
+{
+    /*display:flex;
+    flex-direction:row;*/
+    /*justify-content:space-around;*/
+}
+#updateItemForm {
+    /*width:100%;*/
+    /*width:900px;*/
+    display: flex;
+    flex-direction: row;
+}
+#itemDescription-div {
+    margin-left: 20px;
+}
+#itemDescription {
+    width: 350px;
+}
+#amount-div {
+    margin-left: 20px;
+}
+#amount 
+{
+    width:70px;
+}
+#item-button {
+    margin-top: 24px;
+    margin-left: 20px;
+    height: 35px;
+}
+/*Items Container*/
+#shopitem-container {
+    width: 100%;
+}
+#shopitem-list {
+    width: 100%;
+    margin: auto;
+}
+
+/*Titel Ingridiens List*/
+#alert-shopItems 
+{
+    text-align:center;
+}
+#shopitem-bar-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px groove yellowgreen;
+    border-top: 3px groove yellowgreen;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#checkbox-all {
+    float: left;
+    margin-top: 19px;
+    margin-left: 13px;
+}
+.checkbox-shopItems 
+{
+    display:flex;
+    flex-direction:row;
+}
+#shopitem-title {
+    margin-left: -215px;
+    font-weight: bold;
+}
+.buttons.title-buttons
+{
+   height:30px;
+   margin-top:14px;
+}
+/*Item*/
+.item-div {
+    border-top: 1px groove yellowgreen;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.checkbox-div {
+    display: inline-block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 40px;
+}
+.checkbox {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    vertical-align: middle;
+}
+.item-info-div {
+    width:70%;
+}
+
+.item-info-div h3{
+    color:#0c2aff ;
+   font-weight:bold;
+
+}
+.item-info-div span{
+    color:brown;
+} 
+
+.item-info-div h4 {
+    color: #191e29;
+    font-style: italic;
+}
+/*Delete Button*/
+.delete-item-div 
+{
+    display:flex;
+    align-items:center;
+}
+.delete-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.delete-item:hover {  
+   border-radius: 25px;
+}
+/*Done*/
+.done-div {
+    display: inline-block;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 10px;
+}
+.done{
+    text-align:center;
+    width:110px;
+}
+.done-div h3 {
+    color: #bd3744;
+    font-weight: bold;
+}
+/*-----------------------------------Login Page-----------------------*/
+#login-container {
+    width: 700px;
+    margin: auto;
+    border: 2px groove grey;
+    padding:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}

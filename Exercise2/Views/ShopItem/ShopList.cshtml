@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Exercise2.Models.ShopItem>
+
+@{
+//ViewBag.Title = "Shopping Ingredients";
+}
+
+
+<div class="page-header">
+    <h1>@ViewBag.Title</h1>
+</div>
+<div class="buttons ingredients-top-bar">
+    <form action="JavaScript:updateOrCreateItem()" id="updateItemForm">
+        <div>
+            <input id="itemId" name="itemId" type="hidden">
+            <label for="itemName">Name</label>
+            <input type="text" id="itemName" class="update-input">
+        </div>
+        <div id="itemDescription-div">
+            <label for="itemDescription">Description</label>
+            <input type="text" id="itemDescription" class="update-input">
+        </div>
+        <div id="amount-div">
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" class="update-input">
+        </div>
+        <div><input type="button" class="buttons" id="item-button" value="Add" onclick="updateOrCreateItem()" /></div>
+    </form>
+   <h3 id="alert"></h3>
+</div>
+<hr>
+<div id="shopitem-container">
+    <div id="shopitem-bar-title">
+           <input class="checkbox" id="checkbox-all" type="checkbox" onclick="itemStateAll()" />
+           <h3 id="shopitem-title">Ingredients</h3>            
+           <input type="button" class="buttons title-buttons" id="clear-all-amount" value="Clear Amount" onclick="clearAllAmount()" />        
+           <input type="button" class="buttons title-buttons" id="clear-all-items" value="Clear Items" onclick="removeAll()" />
+        </div>
+    </div>
+    
+    
+    
+    
+    <div id="shopitem-list">
+    </div>
+
